@@ -20,6 +20,9 @@ const pages = {
   register: RegistrationForm
 }
 
+/** The 6 pages. To add a page: create it in /pages and add a line here + in Navbar. */
+const pages = { home: Home, about: About, members: Members, events: Events, notes: Notes, contact: Contact }
+
 export default function App() {
   const route = useRoute()
   const Page = pages[route] || Home
